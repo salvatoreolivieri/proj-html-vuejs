@@ -65,7 +65,7 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 
   }
@@ -77,6 +77,7 @@ header{
   .header-bottom{
     height: 80px;
     padding: 10px 0;
+    background-color: transparent;
 
     ul{
       display: flex;
@@ -91,7 +92,6 @@ header{
       text-decoration: none;
       font-weight: bold;
       margin-right: 35px;
-
 
       &.active{
         color: $green-color
