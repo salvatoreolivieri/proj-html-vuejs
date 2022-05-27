@@ -93,9 +93,6 @@ header{
       font-weight: bold;
       margin-right: 35px;
 
-      &.active{
-        color: $green-color
-      }
     }
 
   }

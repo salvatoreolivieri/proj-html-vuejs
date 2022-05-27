@@ -17,7 +17,7 @@ export default {
 @import "../assets/style/var";
 
 main{
-  
+  height: 400px;
 }
 
 </style>
