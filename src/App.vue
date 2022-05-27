@@ -27,6 +27,11 @@ export default {
 
 <style lang="scss">
 
+@import "./assets/style/global";
+@import "./assets/style/var";
+@import "./assets/style/utility";
+
+
 
 
 </style>

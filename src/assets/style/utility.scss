@@ -1,0 +1,17 @@
+
+@import "../style/_var.scss";
+
+.button{
+  background-color: $blue-color;
+  color: white!important;
+
+  text-transform: uppercase;
+
+  padding: 10px 20px;
+  margin-right: 0px!important;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
