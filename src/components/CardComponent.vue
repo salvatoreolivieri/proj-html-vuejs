@@ -8,7 +8,7 @@
         <div class="text-container">
           <h3>{{service.title}}</h3>
           <p>{{service.description}}</p>
-          <a style="font-size: 12px" href="#" class="button">read more</a>
+          <a style="font-size: 12px" class="button">read more</a>
         </div>
   
   </div>

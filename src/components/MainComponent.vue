@@ -36,7 +36,7 @@
 
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nisi, illo velit dignissimos adipisci tenetur placeat consequatur voluptates aut odio!</p>
 
-          <a style="font-size: 14px; font-weight: bold" href="" class="button">get a free quote now</a>
+          <a style="font-size: 14px; font-weight: bold" class="button">get a free quote now</a>
 
 
         </div>
@@ -57,7 +57,7 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos eius porro! Consectetur, at doloribus!</p>
 
-        <a style="font-size: 13px; font-weight: bold;" href="" class="button">click here</a>
+        <a style="font-size: 13px; font-weight: bold;" class="button">click here</a>
 
       </div>
 

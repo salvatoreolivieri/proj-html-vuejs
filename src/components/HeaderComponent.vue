@@ -35,10 +35,10 @@
           v-for="(item,index) in navItem"
           :key="index"
           >
-            <a :class="item === 'Home' ? 'active' : ''" href="#">{{item}}</a>
+            <a :class="item === 'Home' ? 'active' : ''">{{item}}</a>
           </li>
 
-          <li><a class="button" href="#">free quote</a></li>
+          <li><a class="button">free quote</a></li>
         </ul>
       </nav>
 

@@ -25,7 +25,7 @@
           :key="index"
           >
             <i class="fa-solid fa-chevron-right"></i>
-            <a :class="item.url === 'Home' ? 'active' : ''" href="#">{{item.url}}</a>
+            <a :class="item.url === 'Home' ? 'active' : ''" >{{item.url}}</a>
           </li>
         </ul>
 
@@ -42,7 +42,7 @@
           <li
           v-for="(item, index) in blogPosts"
           :key="index"
-          ><a href="#">{{item.title}}</a></li>
+          ><a>{{item.title}}</a></li>
         </ul>
 
 
@@ -52,6 +52,13 @@
 
   <section>
     <div class="footer-bottom">
+
+      <div class="return-top-button">
+        <a style="color:white" href="#"><i
+        class="fa-solid fa-chevron-up"></i></a>
+        
+      </div>
+
       <div>
         <span>&copy; Copyright 2012-2020 |  Avada Theme by ThemeFusion  |  All Rights Reserved  |  Powered by WordPress </span>
       </div>
@@ -171,6 +178,7 @@ footer{
     background-color: $green-color;
 
     .footer-bottom{
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -179,6 +187,28 @@ footer{
       height: 120px;
 
       color: white;
+
+      .return-top-button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        width: 40px;
+        height: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #394132;
+        border-radius: 5px 5px 0 0 ;
+
+        .fa-solid{
+          margin-right: 0px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
     }
 
     .social-icon-container{

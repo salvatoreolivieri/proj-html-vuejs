@@ -20,7 +20,7 @@
     </div>
 
     <div>
-      <a style="font-size:14px; font-weight: bold;" href="" class="button">read more testimonials</a>
+      <a style="font-size:14px; font-weight: bold;" class="button">read more testimonials</a>
     </div>
 
   </div>
