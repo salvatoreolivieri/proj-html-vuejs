@@ -6,12 +6,16 @@
 
         <!-- contenitore di sinistra -->
         <div>
+          <i class="fa-solid fa-phone"></i>
           <span>Call us for Free Quote: 1.800.555.6789</span>
         </div>
 
         <!-- contenitore destra -->
         <div>
-          social icon
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
         </div>
 
       </div>

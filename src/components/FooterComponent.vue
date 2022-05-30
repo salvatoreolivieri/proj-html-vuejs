@@ -51,8 +51,15 @@
 
   <section>
     <div class="footer-bottom">
-      <span>&copy; Copyright 2012-2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress </span>
-      <span style="margin-top: 15px;">social icon</span>
+      <div>
+        <span>&copy; Copyright 2012-2020  |  Avada Theme by ThemeFusion  |  All Rights Reserved  |  Powered by WordPress </span>
+      </div>
+      <div class="social-icon-container">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
     </div>
   </section>
 
@@ -135,13 +142,12 @@ footer{
       color: white;
     }
 
-    span{}
+    .social-icon-container{
+      margin-top: 20px;
+    }
 
   }
-
-  
-
-  
+ 
 }
 
 </style>
