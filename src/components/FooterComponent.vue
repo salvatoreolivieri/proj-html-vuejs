@@ -20,11 +20,21 @@
         <h3>Avada Movers</h3>
 
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Rates</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Free Quote</a></li>
+          <li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a class="active" href="#">Home</a></li>
+          <li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Rates</a></li>
+          <li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Testimonials</a></li>
+          <li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Blog</a></li>
+          <li>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Free Quote</a></li>
         </ul>
 
 
@@ -147,6 +157,10 @@ footer{
     }
 
   }
+
+  .fa-solid{
+      font-size: 10px;
+    }
  
 }
 

@@ -32,7 +32,7 @@ export default {
 
   .text-container {
     height: 100%;
-    width: 30%;
+    width: 40%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
