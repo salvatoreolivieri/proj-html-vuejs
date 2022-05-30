@@ -23,7 +23,7 @@
     <ServiceComponent />
 
 
-    <section>
+    <div class="move-with-ease-section">
 
       <div class="move-with-ease-container">
 
@@ -43,10 +43,11 @@
 
       </div>
 
-    </section>
+    </div>
 
 
-    <TestimonialsComponent />
+    <TestimonialsComponent 
+    id="testimonials"/>
 
     <div class="last-cta-section">
 
@@ -96,6 +97,13 @@ main{
     font-size: 14px;
     text-transform: uppercase;
   }
+
+  span{
+    &:hover{
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }
 
 .testimonial-cta{
@@ -117,7 +125,7 @@ main{
   }
 }
 
-section{
+.move-with-ease-section{
   background-image: url("../assets/images/avada-movers-movewithease-background-new.jpg");
   background-size: cover;
   background-repeat: no-repeat;

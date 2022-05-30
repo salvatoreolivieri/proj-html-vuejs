@@ -20,21 +20,13 @@
         <h3>Avada Movers</h3>
 
         <ul>
-          <li>
+          <li
+          v-for="(item, index) in sitemap"
+          :key="index"
+          >
             <i class="fa-solid fa-chevron-right"></i>
-            <a class="active" href="#">Home</a></li>
-          <li>
-            <i class="fa-solid fa-chevron-right"></i>
-            <a href="#">Rates</a></li>
-          <li>
-            <i class="fa-solid fa-chevron-right"></i>
-            <a href="#">Testimonials</a></li>
-          <li>
-            <i class="fa-solid fa-chevron-right"></i>
-            <a href="#">Blog</a></li>
-          <li>
-            <i class="fa-solid fa-chevron-right"></i>
-            <a href="#">Free Quote</a></li>
+            <a :class="item.url === 'Home' ? 'active' : ''" href="#">{{item.url}}</a>
+          </li>
         </ul>
 
 
@@ -47,11 +39,10 @@
         <h3>Recent Posts</h3>
 
         <ul>
-          <li><a href="#">Heading Out to College?</a></li>
-          <li><a href="#">Moving Your Business</a></li>
-          <li><a href="#">Outstanding Quality</a></li>
-          <li><a href="#">Cost Of Moving</a></li>
-          <li><a href="#">Best Moving Tips</a></li>
+          <li
+          v-for="(item, index) in blogPosts"
+          :key="index"
+          ><a href="#">{{item.title}}</a></li>
         </ul>
 
 
@@ -62,7 +53,7 @@
   <section>
     <div class="footer-bottom">
       <div>
-        <span>&copy; Copyright 2012-2020  |  Avada Theme by ThemeFusion  |  All Rights Reserved  |  Powered by WordPress </span>
+        <span>&copy; Copyright 2012-2020 |  Avada Theme by ThemeFusion  |  All Rights Reserved  |  Powered by WordPress </span>
       </div>
       <div class="social-icon-container">
         <i class="fa-brands fa-facebook-f"></i>
@@ -78,7 +69,45 @@
 
 <script>
 export default {
-  name: "FooterComponent"
+  name: "FooterComponent",
+  data(){
+    return{
+      sitemap:[
+        {
+          url: "Home"
+        },
+        {
+          url: "Rates"
+        },
+        {
+          url: "Testimonials"
+        },
+        {
+          url: "Blog"
+        },
+        {
+          url: "Free Quote"
+        },
+      ],
+      blogPosts: [
+        {
+          title: "Heading Out to College?"
+        },
+        {
+          title: "Moving Your Business"
+        },
+        {
+          title: "Outstanding Quality"
+        },
+        {
+          title: "Cost Of Moving"
+        },
+        {
+          title: "Best Moving Tips"
+        },
+      ]
+    }
+  }
 }
 </script>
 

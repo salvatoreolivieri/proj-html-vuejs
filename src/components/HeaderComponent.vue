@@ -6,7 +6,7 @@
 
         <!-- contenitore di sinistra -->
         <div>
-          <i class="fa-solid fa-phone"></i>
+          <i class="fa-solid fa-phone-flip"></i>
           <span>Call us for Free Quote: 1.800.555.6789</span>
         </div>
 
@@ -31,12 +31,13 @@
 
       <nav>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Rates</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
+          <li
+          v-for="(item,index) in navItem"
+          :key="index"
+          >
+            <a :class="item === 'Home' ? 'active' : ''" href="#">{{item}}</a>
+          </li>
+
           <li><a class="button" href="#">free quote</a></li>
         </ul>
       </nav>
@@ -48,7 +49,19 @@
 
 <script>
 export default {
-  name: "HeaderComponent"
+  name: "HeaderComponent",
+  data(){
+    return{
+      navItem:[
+        "Home",
+        "Rates",
+        "Testimonials",
+        "FAQ",
+        "Blog",
+        "Contact",
+      ]
+    }
+  }
 }
 </script>
 
